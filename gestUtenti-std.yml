@@ -31,8 +31,8 @@ spring:
 rabbitmq:
   host: 127.0.0.1
   port: 5672
-  username: rabbitmq
-  password: rabbitmq
+  username: gestutente
+  password: gestutente
 
 # ==============================================================
 # = ACTUATOR
