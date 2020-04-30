@@ -28,11 +28,11 @@ spring:
 # ==============================================================
 # = Rabbit MQ
 # ==============================================================
-rabbitmq:
-  host: localhost
-  port: 5672
-  username: gestutente
-  password: gestutente
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: gestutente
+    password: gestutente
 
 # ==============================================================
 # = ACTUATOR
