@@ -115,5 +115,5 @@ sicurezza:
 # ==============================================================
 gestuser:
   password: BimBumBam_2018
-  srvUrl: http://localhost:8765/gateway/getutenti/api/utenti/cerca/userid/
+  srvUrl: http://localhost:8765/gateway/getutenti/api/utente/cerca/nomeutente/
   userId: ReadUser
