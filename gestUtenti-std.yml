@@ -24,7 +24,14 @@ spring:
     hibernate.ddl-auto: none
     generate-ddl: false
     show-sql: true
-
+# ==============================================================
+# = Rabbit MQ
+# ==============================================================
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: gestutente
+    password: gestutente
 # ==============================================================
 # = Eureka Client
 # ==============================================================
@@ -34,14 +41,7 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}
-# ==============================================================
-# = Rabbit MQ
-# ==============================================================
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: gestutente
-    password: gestutente
+
 
 # ==============================================================
 # = ACTUATOR
