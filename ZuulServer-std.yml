@@ -106,7 +106,8 @@ info:
 sicurezza:
     uri: /gateway/auth
     header: Authorization
-    prefix: Bearer
+    #prefix: Bearer
+    prefix: Basic
     expiration: 86400
     secret: 123_Stella
 
