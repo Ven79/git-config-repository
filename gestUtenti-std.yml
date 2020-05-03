@@ -21,8 +21,8 @@ spring:
     password: Checca-79
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
-    hibernate.ddl-auto: create
-    #generate-ddl: false
+    hibernate.ddl-auto: none
+    generate-ddl: false
     show-sql: true
 # ==============================================================
 # = Rabbit MQ
