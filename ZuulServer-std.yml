@@ -19,6 +19,11 @@ zuul:
       path: /getutenti/**
       serviceId: gestUtenti
       sensitive-headers: Cookie,Set-Cookie
+    authserver:
+      path: /**
+      serviceId: AUTH-SERVICE
+      sensitive-headers: Cookie,Set-Cookie
+
 
 gestUtenti:
   ribbon:
@@ -26,7 +31,10 @@ gestUtenti:
    ConnectTimeout: 20000
    MaxTotalHttpConnections: 500
    MaxConnectionsPerHost: 100
-
+AUTH-SERVICE:
+  ribbon:
+   ReadTimeout: 60000
+   ConnectTimeout: 20000
 
 #hystrix:
 #  command:
@@ -106,8 +114,8 @@ info:
 sicurezza:
     uri: /gateway/auth
     header: Authorization
-    #prefix: Bearer
-    prefix: Basic
+    prefix: Bearer
+    #prefix: Basic
     expiration: 86400
     secret: 123_Stella
 
