@@ -25,16 +25,16 @@ zuul:
       sensitive-headers: Cookie,Set-Cookie
 
 
-gestUtenti:
-  ribbon:
-   ReadTimeout: 60000
-   ConnectTimeout: 20000
-   MaxTotalHttpConnections: 500
-   MaxConnectionsPerHost: 100
-AUTH-SERVICE:
-  ribbon:
-   ReadTimeout: 60000
-   ConnectTimeout: 20000
+#gestUtenti:
+#  ribbon:
+#   ReadTimeout: 60000
+#   ConnectTimeout: 20000
+#   MaxTotalHttpConnections: 500
+#   MaxConnectionsPerHost: 100
+#AUTH-SERVICE:
+#  ribbon:
+#   ReadTimeout: 60000
+#   ConnectTimeout: 20000
 
 #hystrix:
 #  command:
